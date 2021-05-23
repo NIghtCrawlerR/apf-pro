@@ -11,6 +11,11 @@ body * {
   position: relative;
 }
 
-.uppercase {
-  text-transform: uppercase;
+a {
+  text-decoration: none;
+}
+
+.container {
+  padding-top: 100px;
+  color: #fff;
 }
