@@ -23,8 +23,6 @@
 .header__logo {
   width: 68px;
   height: 68px;
-  border: 2px solid #fff;
-  border-radius: 50%;
 }
 
 .header__nav-wrap {
