@@ -92,3 +92,16 @@
   transition: width .3s, transform .3s;
   z-index: 0;
 }
+
+/* MOBILE */
+@media screen and (max-width: 960px) {
+  .header-mobile {
+    display: flex;
+  }
+  
+  .header-mobile__activator {
+    padding: 16px;
+    cursor: pointer;
+    z-index: 3;
+  }
+}
