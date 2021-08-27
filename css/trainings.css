@@ -1,0 +1,130 @@
+.trainings-content-wrap {
+  width: 100%;
+}
+
+.trainings-content-wrap::after {
+  display: none;
+}
+
+.trainings-content {
+  margin-bottom: 153px;
+}
+
+.tabs-container {
+  margin-left: 60px;
+}
+
+.tabs-btn-wrap {
+  display: flex;
+  padding: 13px 0;
+}
+
+.tab-btn {
+  margin-right: 60px;
+  line-height: 38px;
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: bold;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity .2s;
+}
+
+.tab-btn:hover {
+  opacity: 1;
+}
+
+.tab-btn.active {
+  opacity: 1;
+}
+
+.tab-content {
+  margin-top: 115px;
+}
+
+.tab-content {
+  line-height: 30px;
+  font-size: 18px;
+}
+
+.tab-content-item {
+  display: none;
+}
+
+.tab-content-item.active {
+  display: block;
+}
+
+.info-block {
+  margin-bottom: 20px;
+}
+
+.info-title {
+  font-weight: bold;
+}
+
+.info-description {
+  margin-left: 30px;
+}
+
+.info-row {
+  display: grid;
+  grid-template-columns: 40% 1fr 224px;
+  grid-gap: 20px;
+}
+
+.info-row p {
+  font-weight: bold;
+}
+
+/* MOBILE */
+@media screen and (max-width: 1280px) {
+  .tabs-btn-wrap {
+    flex-wrap: wrap;
+  }
+
+  .tab-btn {
+    font-size: 24px;
+  }
+
+  .tab-content {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding-top: 0;
+  }
+
+  .trainings-content {
+    margin-bottom: 0;
+  }
+
+  .trainings-content-wrap {
+    margin-top: 0;
+  }
+
+  .tabs-container {
+    margin-left: 0;
+  }
+
+  .tabs-btn-wrap {
+    flex-direction: column;
+  }
+
+  .tab-content {
+    margin-top: 40px;
+    padding-right: 16px;
+  }
+
+  .info-row {
+    grid-template-columns: 80%;
+    grid-gap: 0;
+  }
+
+  .content__inner,
+  .content {
+    height: auto;
+  }
+}
