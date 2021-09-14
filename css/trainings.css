@@ -1,12 +1,12 @@
-.trainings-content-wrap {
+.trainings__content__left {
   width: 100%;
 }
 
-.trainings-content-wrap::after {
+.trainings__content__left::after {
   display: none;
 }
 
-.trainings-content {
+.trainings__content__left-wrap {
   margin-bottom: 153px;
 }
 
@@ -97,11 +97,11 @@
     padding-top: 0;
   }
 
-  .trainings-content {
+  .trainings__content__left-wrap {
     margin-bottom: 0;
   }
 
-  .trainings-content-wrap {
+  .trainings__content__left {
     margin-top: 0;
   }
 
@@ -123,8 +123,9 @@
     grid-gap: 0;
   }
 
-  .content__inner,
-  .content {
+  .trainings__content__inner,
+  .trainings__content {
     height: auto;
+    min-height: calc(100vh - 170px);
   }
 }
