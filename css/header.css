@@ -56,8 +56,8 @@
 }
 
 .header__nav-item:hover,
-.header__nav-item-wrap:hover > .header__nav-item,
-.header__nav-item-wrap.active > .header__nav-item {
+.header__nav-item-wrap:hover .header__nav-item,
+.header__nav-item-wrap.active .header__nav-item {
   color: #fff;
   text-shadow: 0 0 5px #5e6ead, 0 0 10px #6e86e2, 0 0 15px #2541b1, 0 0 20px #0c299b, 0 0 30px #0c299b, 0 0 40px #0c299b, 0 0 55px #0c299b, 0 0 75px #0c299b;
 }

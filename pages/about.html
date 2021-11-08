@@ -5,28 +5,26 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" type="text/css" href="css/reset.min.css" />
-  <link rel="stylesheet" type="text/css" href="css/index.css" />
-  <link rel="stylesheet" type="text/css" href="css/homepage.css" />
-  <link rel="stylesheet" type="text/css" href="css/header.css" />
-  <link rel="stylesheet" type="text/css" href="css/social-sidebar.css" />
-  <link rel="stylesheet" type="text/css" href="css/layout.css" />
-  <link rel="stylesheet" type="text/css" href="css/sidebar-nav.css" />
+  <link rel="stylesheet" type="text/css" href="../css/reset.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/index.css" />
+  <link rel="stylesheet" type="text/css" href="../css/header.css" />
+  <link rel="stylesheet" type="text/css" href="../css/social-sidebar.css" />
+  <link rel="stylesheet" type="text/css" href="../css/layout.css" />
+  <link rel="stylesheet" type="text/css" href="../css/about.css" />
+  <link rel="stylesheet" type="text/css" href="../css/sidebar-nav.css" />
   <title>APF PRO</title>
 </head>
 <body>
-  <div class="homepage__background">
-    <img src="img/homepage-logo.svg" />
-  </div>
-  <div class="root homepage">
+  <div class="root about">
     <div class="overlay"></div>
+
     <header class="header sm-hidden">
       <div class="header__inner">
         <!-- LOGO -->
         <div class="header__logo-wrap">
           <a href="/">
             <div class="header__logo">
-              <img src="img/logo.svg" alt="logo" />
+              <img src="../img/logo.svg" alt="logo" />
             </div>
           </a>
         </div>
@@ -34,7 +32,7 @@
         <!-- NAV -->
         <div class="header__nav-wrap">
           <!-- NAV ITEM -->
-          <div class="header__nav-item-wrap">
+          <div class="header__nav-item-wrap active">
             <a href="/about">
               <div class="header__nav-item">
                 О нас
@@ -64,7 +62,7 @@
 
     <div class="header-mobile lg-hidden">
       <div class="header-mobile__activator">
-        <img src="img/header-activator.svg">
+        <img src="../img/header-activator.svg">
       </div>
     </div>
 
@@ -100,6 +98,7 @@
         </div>
       </div>
     </div>
+
     <!-- CONTENT -->
     <div class="container">
       <!-- CONTANTS CONTENT -->
@@ -107,25 +106,31 @@
         <div class="content__left">
           <div class="content__left-wrap">
             <div class="content__inner">
-              <div class="btn-wrap sm-hidden">
-                <button class="btn">
-                  Записаться
-                </button>
-                <button class="btn">
-                  Вопрос
-                </button>
+              <div class="title-wrap">
+                <h3 class="page-title">
+                  О НАС
+                </h3>
               </div>
-              <div class="homepage__title-wrap">
-                <h3 class="page-title">
-                  на грани
-                </h3>
-                <h3 class="page-title">
-                  возможностей
-                </h3>
+              <div class="description-wrap">
+                <p class="description-item">
+                  Паркур клуб «APF» представляет собой три направления спортивных дисциплин.
+                </p>
+                <p class="description-item">
+                  Акробатика (уличная) – на базовом уровне совмещает в себе сальтовые и винтовые движения от разного рода поверхностей и снарядов, а так же трюки другого происхождения. 
+                  На продвинутом уровне не имеет границ в плоскостях, положении и сложности.
+                  (постоянно пополняеться новыми движениями). 
+                </p>
+                <p class="description-item">
+                  Паркур – искусство перемещения. В основе дисциплины лежат трюки, связанные с преодолением препятствий, техники приземлений, навыки баланса и понимания возможностей своего тела.
+                </p>
+                <p class="description-item">
+                  Фриран – дисциплина, которая комбинирует в себе паркур (как искусство перемещения), 
+                  но в основе лежит не эффективность,  а эффектность (за счет акробатики и других трюков).
+                </p>
               </div>
             </div>
 
-            <div class="description">
+            <div class="description sm-hidden">
               акробатика <br />
               паркур <br />
               фриран
@@ -133,6 +138,7 @@
           </div>
         </div>
         <div class="content__right">
+         
         </div>
       </div>
 
@@ -141,27 +147,27 @@
         <div class="social__inner">
           <div class="social__icon-wrap">
             <a href="https://www.facebook.com/apf.pro.ua" target="_blank">
-              <img src="img/fb.svg" />
+              <img src="../img/fb.svg" />
             </a>
           </div>
           <div class="social__icon-wrap">
             <a href="https://www.youtube.com/channel/UCqLaTgyBrn7cRCaydVDY3hg" target="_blank">
-              <img src="img/youtube.svg" />
+              <img src="../img/youtube.svg" />
             </a>
           </div>
           <div class="social__icon-wrap">
             <a href="https://www.instagram.com/apf.pro" target="_blank">
-              <img src="img/instagram.svg" />
+              <img src="../img/instagram.svg" />
             </a>
           </div>
           <div class="social__icon-wrap">
             <a href="#" target="_blank">
-              <img src="img/telegram.svg" />
+              <img src="../img/telegram.svg" />
             </a>
           </div>
           <div class="social__icon-wrap">
             <a href="https://vm.tiktok.com/ZMdqtSqQ1/" target="_blank">
-              <img src="img/tiktok.svg" />
+              <img src="../img/tiktok.svg" />
             </a>
           </div>
         </div>
@@ -184,7 +190,12 @@
     </div>
   </div>
 
-  <script src="js/header.js"></script>
-  <script src="js/sidebar-nav.js"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDiqg2meij4WDJIFu9dLCYzFgkL00Jj1HM&callback=initMap&libraries=&v=weekly"
+    async
+  ></script>
+  <script src="../js/google-map.js"></script>
+  <script src="../js/header.js"></script>
+  <script src="../js/sidebar-nav.js"></script>
 </body>
 </html>
