@@ -1,0 +1,145 @@
+.modal {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  padding: 45px;
+  border: 1px solid #00000080;
+  border-radius: 5px;
+  background-color: #fff;
+  z-index: 10;
+}
+
+.modal.open {
+  display: block;
+}
+
+.modal__close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.modal__error {
+  margin-top: 20px;
+  font-size: 14px;
+  color: red;
+}
+
+.modal__title {
+  text-align: center;
+  color: #000;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.modal__input {
+  height: 50px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid rgba(23, 23, 23, 0.5);
+  margin-bottom: 20px;
+  outline: none;
+  color: #000;
+  font-weight: bold;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.modal__select {
+  height: 50px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid rgba(23, 23, 23, 0.5);
+  margin-bottom: 20px;
+  outline: none;
+  color: #000;
+  font-weight: bold;
+  font-size: 15px;
+  text-transform: uppercase;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__form-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal__form-row .modal__input {
+  width: 46%;
+}
+
+.modal__submit-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  margin-bottom: 20px;
+  border: none;
+  outline: none;
+  background-color: #000;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal__checkbox-label {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.modal__checkbox {
+  margin: 0 10px 0 0;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.modal__checkbox-group {
+  display: flex;
+  align-items: center;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #000;
+  font-weight: bold;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #000;
+  font-weight: bold;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #000;
+  font-weight: bold;
+}
+
+
+@media screen and (max-width: 560px) {
+  .modal {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+  }
+}

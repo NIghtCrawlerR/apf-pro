@@ -12,6 +12,7 @@
   <link rel="stylesheet" type="text/css" href="css/social-sidebar.css" />
   <link rel="stylesheet" type="text/css" href="css/layout.css" />
   <link rel="stylesheet" type="text/css" href="css/sidebar-nav.css" />
+  <link rel="stylesheet" type="text/css" href="css/modal.css" />
   <title>APF PRO</title>
 </head>
 <body>
@@ -108,10 +109,10 @@
           <div class="content__left-wrap">
             <div class="content__inner">
               <div class="btn-wrap sm-hidden">
-                <button class="btn">
+                <button class="btn" data-modal-btn="training">
                   Записаться
                 </button>
-                <button class="btn">
+                <button class="btn" data-modal-btn="question">
                   Вопрос
                 </button>
               </div>
@@ -174,17 +175,72 @@
         ТЕЛЕФОН (095) 664 15 98
       </p>
       <div class="btn-wrap btn-wrap--mobile lg-hidden">
-        <button class="btn">
+        <button class="btn" data-modal-btn="training">
           Записаться
         </button>
-        <button class="btn">
+        <button class="btn" data-modal-btn="question">
           Вопрос
         </button>
       </div>
     </div>
   </div>
 
+  <div class="modal" data-modal-name="training">
+    <div class="modal__close" data-modal-dismiss="training">✖</div>
+    <div class="modal__inner">
+      <div class="modal__title">
+        ЗАПИСЬ НА ТРЕНИРОВКУ
+      </div>
+      <div class="modal__fieldset">
+        <form class="modal__form" data-form="training" method="POST">
+          <div class="modal__form-row">
+            <input class="modal__input" name="name" placeholder="Имя" required />
+            <input class="modal__input" name="phone" placeholder="Телефон" required />
+          </div>
+          <input type="email" class="modal__input" name="email" placeholder="Электронная почта" required />
+          <select class="modal__select" name="training" required>
+            <option value="" disabled selected>Вид Тренировки</option>
+            <option value="group">Групповая тренировка</option>
+            <option value="presonal">Персональная тренировка</option>
+          </select>
+          <button type="submit" class="modal__submit-btn" data-submit-form="training">ЗАПИСАТЬСЯ</button>
+          <div class="modal__checkbox-group">
+            <input class="modal__checkbox" type="checkbox" id="acceptance" name="acceptance" required>
+            <label for="acceptance" class="modal__checkbox-label">Я принимаю условия ПОЛЬЗОВАТЕЛЬСЬКОГО СОГЛАШЕНИЯ</label>    
+          </div>
+        </form>
+      </div>
+      <div class="modal__error"></div>
+    </div>
+  </div>
+
+  <div class="modal" data-modal-name="question">
+    <div class="modal__close" data-modal-dismiss="question">✖</div>
+    <div class="modal__inner">
+      <div class="modal__title">
+        задать вопрос
+      </div>
+      <div class="modal__fieldset">
+        <form class="modal__form" data-form="question" method="POST">
+          <div class="modal__form-row">
+            <input class="modal__input" name="name" placeholder="Имя" required />
+            <input class="modal__input" name="phone" placeholder="Телефон" required />
+          </div>
+          <input type="email" class="modal__input" name="email" placeholder="Электронная почта" required />
+          <input class="modal__input" name="question" placeholder="Вопрос" required />
+          <button type="submit" class="modal__submit-btn" data-submit-form="question">отправить вопрос</button>
+          <div class="modal__checkbox-group">
+            <input class="modal__checkbox" type="checkbox" id="acceptance" name="acceptance" required>
+            <label for="acceptance" class="modal__checkbox-label">Я принимаю условия ПОЛЬЗОВАТЕЛЬСЬКОГО СОГЛАШЕНИЯ</label>    
+          </div>
+        </form>
+      </div>
+      <div class="modal__error"></div>
+    </div>
+  </div>
+
   <script src="js/header.js"></script>
   <script src="js/sidebar-nav.js"></script>
+  <script src="js/modal.js"></script>
 </body>
 </html>

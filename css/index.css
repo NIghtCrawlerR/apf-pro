@@ -5,7 +5,6 @@ body {
 
 body * {
   box-sizing: border-box;
-  color: #fff;
 }
 
 .root {
@@ -54,6 +53,7 @@ a {
   text-transform: uppercase;
   border: 2px solid #595959;
   background-color: transparent;
+  color: #fff;
   font-size: 18px;
   font-weight: 600;
   cursor: pointer;
