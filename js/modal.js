@@ -42,7 +42,7 @@ overlay.addEventListener('click', handleOverlayClick)
 
 // FORMS
 const sendData = async (requestData) => {
-  const response = await fetch(requestUrl, {
+  const response = await fetch('https://apfpro.com.ua/form.php', {
       method: 'POST',
       headers: {
           'Accept': 'application/json',
@@ -54,10 +54,16 @@ const sendData = async (requestData) => {
 };
 
 async function submit(form) {
-  var data = new FormData(form);
+  var formData = new FormData(form);
   var formName = form.dataset.form
 
-  
+  const data = [...formData].reduce((acc, [field, value]) => {
+    return {
+      ...acc,
+      [field]: value,
+    }
+  }, {})
+
   try {
     await sendData(data)
     document.querySelector(`${getModalAttr(formName)} .modal__inner`).innerHTML = "Ваша заявка успешн отправлена. Наш менеджер скоро свяжется с Вами.";
